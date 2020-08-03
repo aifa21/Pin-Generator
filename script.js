@@ -1,10 +1,10 @@
 
 //........... HIDE ...........
-let match=document.getElementById("matched");
-match.style.display="none";
+ let match=document.getElementById("matched");
+ match.style.display="none";
 
-let unMatch=document.getElementById("unmatched");
-unMatch.style.display="none";
+ let unMatch=document.getElementById("unmatched");
+ unMatch.style.display="none";
 
 
 //...........Random Numbers...........
@@ -14,7 +14,11 @@ const generate=document.getElementById("pin-button").addEventListener('click',fu
     var val = Math.floor(1000 + Math.random() * 9000);
     document.getElementById("pin-input").value=val;
 
-    
+    let match=document.getElementById("matched");
+match.style.display="none";
+
+let unMatch=document.getElementById("unmatched");
+unMatch.style.display="none";
     
 });
 
